@@ -57,10 +57,10 @@ To initiate a payment, use the `initialize` method. This method requires a set o
 
 ```python
 response = chapa.initialize(
-    email="customer@example.com",
+    email="mobo0480@gmail.com",
     amount=1000,
-    first_name="John",
-    last_name="Doe",
+    first_name="muaz",
+    last_name="ahmed",
     tx_ref="your_unique_transaction_reference",
     callback_url="https://yourcallback.url/here"
 )
@@ -85,9 +85,9 @@ You can create subaccounts for split payments using the `create_subaccount` meth
 subaccount_response = chapa.create_subaccount(
     business_name="My Business",
     account_name="My Business Account",
-    bank_code="12345",
-    account_number="0012345678",
-    split_value="0.2",
+    bank_code="4889",
+    account_number="0931981362",
+    split_value="0.3",
     split_type="percentage"
 )
 print(subaccount_response)
@@ -99,8 +99,8 @@ To initiate a bank transfer, use the `transfer_to_bank` method.
 
 ```python
 transfer_response = chapa.transfer_to_bank(
-    account_name="Recipient Name",
-    account_number="0987654321",
+    account_name="Recipient muaz",
+    account_number="0931981362",
     amount="500",
     reference="your_transfer_reference",
     bank_code="67890",
